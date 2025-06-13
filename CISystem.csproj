@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23EE19B2-2812-4089-894F-0D1309B4E311}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CISystem</RootNamespace>
+    <AssemblyName>CISystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>مقامی تحقیقاتی منظر.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton.Toolkit, Version=90.25.2.55, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Toolkit.90.25.2.55\lib\net472\Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
+      <HintPath>packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCase.Designer.cs">
+      <DependentUpon>AddCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScene.Designer.cs">
+      <DependentUpon>AddScene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSuspect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSuspect.Designer.cs">
+      <DependentUpon>AddSuspect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVictim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVictim.Designer.cs">
+      <DependentUpon>AddVictim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analytics.Designer.cs">
+      <DependentUpon>Analytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignOfficer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignOfficer.Designer.cs">
+      <DependentUpon>AssignOfficer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseTimeline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaseTimeline.Designer.cs">
+      <DependentUpon>CaseTimeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassO.Designer.cs">
+      <DependentUpon>ChangePassO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassP.Designer.cs">
+      <DependentUpon>ChangePassP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CIDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrimeWave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrimeWave.Designer.cs">
+      <DependentUpon>CrimeWave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="DisplayCasesO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayCasesO.Designer.cs">
+      <DependentUpon>DisplayCasesO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayCasesP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayCasesP.Designer.cs">
+      <DependentUpon>DisplayCasesP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCase.Designer.cs">
+      <DependentUpon>EditCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FakeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FakeReport.Designer.cs">
+      <DependentUpon>FakeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileFIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileFIR.Designer.cs">
+      <DependentUpon>FileFIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchedCases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchedCases.Designer.cs">
+      <DependentUpon>MatchedCases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewReportsO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewReportsO.Designer.cs">
+      <DependentUpon>NewReportsO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewTimeline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTimeline.Designer.cs">
+      <DependentUpon>NewTimeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficerCases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficerCases.Designer.cs">
+      <DependentUpon>OfficerCases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficerDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficerDash.Designer.cs">
+      <DependentUpon>OfficerDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicDash.Designer.cs">
+      <DependentUpon>PublicDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewEvidence.Designer.cs">
+      <DependentUpon>ReviewEvidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewLeads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewLeads.Designer.cs">
+      <DependentUpon>ReviewLeads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewTestimony.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewTestimony.Designer.cs">
+      <DependentUpon>ReviewTestimony.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCaseP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCaseP.Designer.cs">
+      <DependentUpon>SearchCaseP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCaseO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCaseO.Designer.cs">
+      <DependentUpon>SearchCaseO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectRep.Designer.cs">
+      <DependentUpon>selectRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimilarCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimilarCase.Designer.cs">
+      <DependentUpon>SimilarCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialOp.Designer.cs">
+      <DependentUpon>SpecialOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialOpLow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialOpLow.Designer.cs">
+      <DependentUpon>SpecialOpLow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitEvidence.Designer.cs">
+      <DependentUpon>SubmitEvidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitLead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitLead.Designer.cs">
+      <DependentUpon>SubmitLead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitReport.Designer.cs">
+      <DependentUpon>SubmitReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitTestimony.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitTestimony.Designer.cs">
+      <DependentUpon>SubmitTestimony.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdProfileO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdProfileO.Designer.cs">
+      <DependentUpon>UpdProfileO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdProfileP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdProfileP.Designer.cs">
+      <DependentUpon>UpdProfileP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSession.cs" />
+    <Compile Include="ViewEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEvidence.Designer.cs">
+      <DependentUpon>ViewEvidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLeads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLeads.Designer.cs">
+      <DependentUpon>ViewLeads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewScenes.Designer.cs">
+      <DependentUpon>ViewScenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSuspects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSuspects.Designer.cs">
+      <DependentUpon>ViewSuspects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTestimony.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTestimony.Designer.cs">
+      <DependentUpon>ViewTestimony.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVictims.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewVictims.Designer.cs">
+      <DependentUpon>ViewVictims.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCase.resx">
+      <DependentUpon>AddCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScene.resx">
+      <DependentUpon>AddScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSuspect.resx">
+      <DependentUpon>AddSuspect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVictim.resx">
+      <DependentUpon>AddVictim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analytics.resx">
+      <DependentUpon>Analytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignOfficer.resx">
+      <DependentUpon>AssignOfficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseTimeline.resx">
+      <DependentUpon>CaseTimeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassO.resx">
+      <DependentUpon>ChangePassO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassP.resx">
+      <DependentUpon>ChangePassP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrimeWave.resx">
+      <DependentUpon>CrimeWave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayCasesO.resx">
+      <DependentUpon>DisplayCasesO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayCasesP.resx">
+      <DependentUpon>DisplayCasesP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCase.resx">
+      <DependentUpon>EditCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FakeReport.resx">
+      <DependentUpon>FakeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileFIR.resx">
+      <DependentUpon>FileFIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchedCases.resx">
+      <DependentUpon>MatchedCases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewReportsO.resx">
+      <DependentUpon>NewReportsO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTimeline.resx">
+      <DependentUpon>NewTimeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficerCases.resx">
+      <DependentUpon>OfficerCases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficerDash.resx">
+      <DependentUpon>OfficerDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PublicDash.resx">
+      <DependentUpon>PublicDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewEvidence.resx">
+      <DependentUpon>ReviewEvidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewLeads.resx">
+      <DependentUpon>ReviewLeads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewTestimony.resx">
+      <DependentUpon>ReviewTestimony.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCaseO.resx">
+      <DependentUpon>SearchCaseO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCaseP.resx">
+      <DependentUpon>SearchCaseP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectRep.resx">
+      <DependentUpon>selectRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimilarCase.resx">
+      <DependentUpon>SimilarCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialOp.resx">
+      <DependentUpon>SpecialOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialOpLow.resx">
+      <DependentUpon>SpecialOpLow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitEvidence.resx">
+      <DependentUpon>SubmitEvidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitLead.resx">
+      <DependentUpon>SubmitLead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitReport.resx">
+      <DependentUpon>SubmitReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitTestimony.resx">
+      <DependentUpon>SubmitTestimony.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdProfileO.resx">
+      <DependentUpon>UpdProfileO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdProfileP.resx">
+      <DependentUpon>UpdProfileP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEvidence.resx">
+      <DependentUpon>ViewEvidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLeads.resx">
+      <DependentUpon>ViewLeads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewScenes.resx">
+      <DependentUpon>ViewScenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSuspects.resx">
+      <DependentUpon>ViewSuspects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTestimony.resx">
+      <DependentUpon>ViewTestimony.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewVictims.resx">
+      <DependentUpon>ViewVictims.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App1.config" />
+    <None Include="CIDataSet.xsc">
+      <DependentUpon>CIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CIDataSet.xss">
+      <DependentUpon>CIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CIDataSet1.xsc">
+      <DependentUpon>CIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CIDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CIDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CIDataSet1.xss">
+      <DependentUpon>CIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="مقامی تحقیقاتی منظر.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMLSS">
+      <Guid>{C21E9CE5-B317-463B-A1B1-B5E36EED59D0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPDXMLib">
+      <Guid>{73F0DD5C-D071-46B6-A8BF-897C84EAAC49}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLauncher">
+      <Guid>{5CB42160-CD7C-4806-9367-1C4A65153F4A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
