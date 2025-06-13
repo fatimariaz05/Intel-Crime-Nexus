@@ -37,7 +37,7 @@
 
 ---
 
-📁 File Structure Note
+### 📁 File Structure Note:
 All project files have been uploaded in a flat structure (i.e., not separated into folders). This was done to ensure straightforward access and visibility of each component. The solution (.sln), source code files (.cs, .Designer.cs), resources (.resx), configuration files (App.config), and dataset schemas (.xsd) are all available directly in the root directory.
 
 Despite the flat layout, the project is fully functional and can be opened directly in Visual Studio without requiring any manual setup. Just open the .sln file, and Visual Studio will automatically link all files as intended.
