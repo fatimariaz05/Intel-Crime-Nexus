@@ -88,15 +88,13 @@ Despite the flat layout, the project is fully functional and can be opened direc
 
 > 👏 Developed by a passionate team of 4 students from FAST NUCES
 
-- **Mahnoor Naveed** – 23L-2516  
 - Fatima Riaz – 23L-2637  
+- Mahnoor Naveed – 23L-2516  
 - Aliza Sharafat – 23L-2524  
 - Rabia Saeed – 23L-2560  
 
 ---
 
 
-
-## ⭐ If you like this project, please consider starring the repo!
 
 
