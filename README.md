@@ -95,13 +95,7 @@ Despite the flat layout, the project is fully functional and can be opened direc
 
 ---
 
-## 📩 Contact
 
-**Mahnoor Naveed**  
-📧 mahnoornaveed2405@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/mahnoorrrajput)
-
----
 
 ## ⭐ If you like this project, please consider starring the repo!
 
